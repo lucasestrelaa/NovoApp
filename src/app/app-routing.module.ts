@@ -11,6 +11,10 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
+  {
+    path: 'add-tecnologia',
+    loadChildren: () => import('./add-tecnologia/add-tecnologia.module').then( m => m.AddTecnologiaPageModule)
+  },
 ];
 
 @NgModule({
